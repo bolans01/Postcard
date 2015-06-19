@@ -42,6 +42,22 @@
                                     <rect key="frame" x="243" y="159" width="100" height="100"/>
                                 </variation>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-hV-Um0">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="277" width="327" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jU-0J-jXY">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="316" width="327" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAr-UQ-c6R">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.82153818239999998" blue="0.33935381460000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -65,40 +81,35 @@
                                     <rect key="frame" x="16" y="92" width="327" height="59"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAo-hV-Um0">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsc-wm-ugu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="277" width="327" height="30"/>
+                                    <rect key="frame" x="16" y="159" width="228" height="62"/>
                                 </variation>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9jU-0J-jXY">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="316" width="327" height="30"/>
-                                </variation>
-                            </textField>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Hzy-SG-Fih"/>
-                                <exclude reference="wAr-UQ-c6R"/>
-                                <exclude reference="QCw-X7-59N"/>
                                 <exclude reference="iAo-hV-Um0"/>
                                 <exclude reference="9jU-0J-jXY"/>
+                                <exclude reference="wAr-UQ-c6R"/>
+                                <exclude reference="QCw-X7-59N"/>
+                                <exclude reference="Jsc-wm-ugu"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Hzy-SG-Fih"/>
-                                <include reference="wAr-UQ-c6R"/>
-                                <include reference="QCw-X7-59N"/>
                                 <include reference="iAo-hV-Um0"/>
                                 <include reference="9jU-0J-jXY"/>
+                                <include reference="wAr-UQ-c6R"/>
+                                <include reference="QCw-X7-59N"/>
+                                <include reference="Jsc-wm-ugu"/>
                             </mask>
                         </variation>
                     </view>
@@ -107,6 +118,7 @@
                         <outlet property="enterNameTextField" destination="iAo-hV-Um0" id="DkZ-3Q-6Vb"/>
                         <outlet property="mailButton" destination="wAr-UQ-c6R" id="xle-xC-vZz"/>
                         <outlet property="messageLabel" destination="QCw-X7-59N" id="Ph7-sP-RWc"/>
+                        <outlet property="nameLabel" destination="Jsc-wm-ugu" id="6xV-NL-cYB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
